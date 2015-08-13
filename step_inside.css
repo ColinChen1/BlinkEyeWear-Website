@@ -1,0 +1,92 @@
+body{
+  background: url(http://www.coastal.com/thelook/wp-uploads/2013/07/black-rim-glasses-main1.jpg);
+  background-repeat: bottom;
+  background-size: cover;
+}
+.nav a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.col-md-4{
+  /*text-align: center;*/
+  display: inline;
+}
+
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none;
+    padding: 4px 20px;
+}
+.btn-primary.outline {
+    border: 2px solid white;
+    color: white;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: lightgray;
+    border-color: lightgray;
+    background: none;
+}
+
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 80;
+    letter-spacing: 1px;
+    /*text-transform: uppercase;*/
+    border-radius:5px;
+
+
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+div .spacing{
+  height:500px;
+}
+
+h1{
+  color: white;
+  font-size: 100px;
+}
+p{
+  color: white;
+}
+
+div #paragraph{
+  text-align: center;
+}
+
+div #Be_the_first{
+  text-align: center;
+}
+
+#input{
+
+  text-align: center
+}
+
+#button1{
+  margin-top: 5%;
+}
+
+#first_to_know{
+  font-size: 20px;
+}
