@@ -27,16 +27,20 @@ body{
 
 .btn.outline {
     background: none;
-    padding: 4px 20px;
+    padding: 10px 20px;
+    transition-property: background;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
 }
 .btn-primary.outline {
     border: 2px solid white;
     color: white;
 }
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-    color: lightgray;
-    border-color: lightgray;
-    background: none;
+    color: gray;
+    border-color: white;
+    background: white;
+
 }
 
 
@@ -45,12 +49,12 @@ body{
 ************************/
 
 .btn {
-    padding: 14px 24px;
+    padding: 16px 24px;
     border: 0 none;
     font-weight: 80;
     letter-spacing: 1px;
     /*text-transform: uppercase;*/
-    border-radius:5px;
+    border-radius:2px;
 
 
 }
@@ -59,7 +63,7 @@ body{
 }
 
 div .spacing{
-  height:500px;
+  height:200px;
 }
 
 h1{
@@ -89,4 +93,41 @@ div #Be_the_first{
 
 #first_to_know{
   font-size: 20px;
+}
+
+.btn-social{
+  border-radius: 5px;
+  padding: 6% 6%;
+  transition-property: border-radius;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+.btn-social:hover{
+  border-radius: 100%
+} 
+
+.facebook{
+  background: url('facebook1.png');
+  background-size: 100%;
+}
+
+.twitter{
+  background: url('email.png');
+  background-size: 100%;
+}
+
+.instagram{
+    background: url('insta2.png');
+  background-size: 100%;
+}
+
+div .social{
+  text-align: center;
+  margin-top: 60px;
+}
+
+input #usr{
+  border-radius: 0px;
+  background-color: gray;
 }
