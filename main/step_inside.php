@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+  <title> blink eyewear</title>
   <head>
    <link href="bootstrap.min.css" rel="stylesheet">
    <link href="font-awesome.min.css" rel="stylesheet">
