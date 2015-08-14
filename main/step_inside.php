@@ -56,7 +56,7 @@
             <form>
             <a href="https://www.facebook.com/blinkeyewear.co?fref=ts" target="_blank"><button type="button" class="btn btn-social facebook"></button></a>
 
-            <a href = "mailto:hello@wearblink.com"><button type="button" class="btn btn-social twitter" target="_blank"></button></a>
+            <a href = "mailto:hello@wearblink.com"><button type="button" class="btn btn-social email" target="_blank"></button></a>
 
             <a href="https://instagram.com/wearblink/" target="_blank"><button type="button" class="btn btn-social instagram"></button></a>
           </form>
