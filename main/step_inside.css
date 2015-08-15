@@ -90,13 +90,13 @@ div #Be_the_first{
 .btn-social{
   border-radius: 100%;
   padding: 6% 6%;
-  transition-property: opacity;
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
+  /*transition-property: opacity;*/
+  /*transition-duration: 0.25s;*/
+  /*transition-timing-function: linear;*/
 }
 
 .btn-social:hover {
-  opacity: 0.4;
+  /*opacity: 0.4;*/
 } 
 
 .facebook{
