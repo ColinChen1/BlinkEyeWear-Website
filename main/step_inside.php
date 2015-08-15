@@ -16,7 +16,7 @@
   <body>
 
     <div class = "container">
-       <div class = "spacing">
+      <div class = "spacing">
       </div>
       <div class = "row">
         <div class="col-md-4"></div>
@@ -53,7 +53,7 @@
       </div>
 
       <script type="text/javascript">
-        function changeOpacity(el1,el2){
+        function changeOpacity(el1,el2,el3){
           var elem1 = document.getElementById(el1);
           elem1.style.transition = "opacity 0.25s linear";
           elem1.style.opacity = 0.4;
@@ -61,9 +61,13 @@
           var elem2 = document.getElementById(el2);
           elem2.style.transition = "opacity 0.25s linear"
           elem2.style.opacity = 0.4;
+
+          var elem3 = document.getElementById(el3);
+          elem3.style.transition = "opacity 0.25s linear"
+          elem3.style.opacity = 0.4;
         }
 
-        function revertOpacity(el1,el2){
+        function revertOpacity(el1,el2,el3){
           var elem1 = document.getElementById(el1);
           elem1.style.transition = "opacity 0.25s linear";
           elem1.style.opacity = 1;
@@ -71,17 +75,21 @@
           var elem2 = document.getElementById(el2);
           elem2.style.transition = "opacity 0.25s linear"
           elem2.style.opacity = 1;
+
+          var elem3 = document.getElementById(el3);
+          elem3.style.transition = "opacity 0.25s linear"
+          elem3.style.opacity = 1;
         }
       </script>
       <div class = "row">
         <div class="col-xs-4"></div>
         <div  class="col-xs-4 social">
             <form>
-            <a href="https://www.facebook.com/blinkeyewear.co?fref=ts" target="_blank"><button onmouseover = "changeOpacity('emailButton','instaButton');" onmouseout = "revertOpacity('emailButton','instaButton')" type="button" class="btn btn-social facebook" id = 'facebookButton'></button></a>
+            <a href="https://www.facebook.com/blinkeyewear.co?fref=ts" target="_blank"><button onmouseover = "changeOpacity('emailButton','instaButton', 'twitterButton');" onmouseout = "revertOpacity('emailButton','instaButton', 'twitterButton')" type="button" class="btn btn-social facebook" id = 'facebookButton'></button></a>
+            <a href="" target="_blank"><button onmouseover = "changeOpacity('facebookButton', 'emailButton','instaButton');" onmouseout = "revertOpacity('facebookButton', 'emailButton','instaButton')" type="button" class="btn btn-social twitter" id = 'twitterButton'></button></a>
+            <a href = "mailto:hello@wearblink.com"><button onmouseover = "changeOpacity('facebookButton','twitterButton', 'instaButton');" onmouseout = "revertOpacity('facebookButton','twitterButton','instaButton')" type="button" class="btn btn-social email" id = 'emailButton' target="_blank"></button></a>
 
-            <a href = "mailto:hello@wearblink.com"><button onmouseover = "changeOpacity('facebookButton','instaButton');" onmouseout = "revertOpacity('facebookButton','instaButton')" type="button" class="btn btn-social email" id = 'emailButton' target="_blank"></button></a>
-
-            <a href="https://instagram.com/wearblink/" target="_blank"><button onmouseover = "changeOpacity('facebookButton','emailButton');" onmouseout = "revertOpacity('facebookButton','emailButton')" type="button" class="btn btn-social instagram" id = "instaButton"></button></a>
+            <a href="https://instagram.com/wearblink/" target="_blank"><button onmouseover = "changeOpacity('facebookButton','twitterButton','emailButton');" onmouseout = "revertOpacity('facebookButton','twitterButton','emailButton')" type="button" class="btn btn-social instagram" id = "instaButton"></button></a>
           </form>
         </div> 
         <div class="col-xs-4"></div>

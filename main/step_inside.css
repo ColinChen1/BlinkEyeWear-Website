@@ -118,6 +118,10 @@ div #Be_the_first{
   background-size: 100%;
 }
 
+.twitter{
+  background: url('twitter.png');
+  background-size: 100%;
+}
 div .social{
   text-align: center;
   margin-top: 100px;
