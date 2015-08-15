@@ -39,11 +39,11 @@
       <div class = "row"> 
         <div class="col-xs-4" ></div>
         <div class="col-xs-4" id = "input">
-          <form action = "http://localhost/emailadded.php" method = "post">
+          <form action = "http://localhost/blinkeyewear-website/main/emailadded.php" method = "post">
             <div class="form-group" >
-              <input type="text" name = "email_input" class="form-control" id="usr" placeholder = "enter email">
+              <input type="text" name = "email_input" class="form-control" id="usr" placeholder = "enter email" value = "">
               <p></p>
-              <input type="submit" name = "submit_email" value = "Send" class="btn btn-primary btn-lg outline" id = "submitButton">
+              <input type="submit" name = "submit_email" value = "Send" class="btn btn-primary btn-lg outline" >
               <p></p>
               <button type="button" class="btn btn-primary btn-lg outline" id = "button1">Step Inside</button>
             </div>
