@@ -8,11 +8,12 @@ $response = @mysqli_query($dbc, $query);
 
 if($response)
 {
-	echo 'EMAILS: '; 
+	echo 'EMAILS: <p></p>'; 
 
 	while($row = mysqli_fetch_array($response))
 	{
 		echo $row['email'];
+		echo '<p></p>';
 	}
 }
 else
