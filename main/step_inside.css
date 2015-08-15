@@ -88,29 +88,29 @@ div #Be_the_first{
 }
 
 .btn-social{
-  border-radius: 5px;
+  border-radius: 100%;
   padding: 6% 6%;
-  transition-property: border-radius;
+  transition-property: opacity;
   transition-duration: 0.25s;
   transition-timing-function: linear;
 }
 
-.btn-social:hover{
-  border-radius: 100%
+.btn-social:hover {
+  opacity: 0.4;
 } 
 
 .facebook{
-  background: url('facebook1.png');
+  background: url('facebook2.png');
   background-size: 100%;
 }
 
 .email{
-  background: url('email.png');
+  background: url('email1.png');
   background-size: 100%;
 }
 
 .instagram{
-    background: url('insta2.png');
+    background: url('insta3.png');
   background-size: 100%;
 }
 
