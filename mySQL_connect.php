@@ -1,6 +1,6 @@
 <?php
 
-DEFINE('DB_USER', 'cewadmin'); 
+DEFINE('DB_USER', 'root'); 
 DEFINE('DB_PASSWORD', 'turtledove');
 DEFINE('DB_HOST', 'localhost');
 DEFINE('DB_NAME', 'emailad'); 
