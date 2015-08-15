@@ -1,8 +1,8 @@
 <?php
 
-require_once('../mySQL/mySQL_connect.php');
+require_once('../mySQL_connect.php');
 
-$query = "SELECT email FROM emailad"; 
+$query = "SELECT email FROM emails"; 
 
 $response = @mysqli_query($dbc, $query); 
 
