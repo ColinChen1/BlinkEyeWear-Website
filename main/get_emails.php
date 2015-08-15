@@ -20,6 +20,6 @@ else
 	echo 'Could not query database.'; 
 }
 
-mysql_close($dbc);
+mysqli_close($dbc);
 
 ?>
