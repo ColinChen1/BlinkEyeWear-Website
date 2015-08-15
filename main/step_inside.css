@@ -1,5 +1,6 @@
 body{
-  background: url(http://www.coastal.com/thelook/wp-uploads/2013/07/black-rim-glasses-main1.jpg);
+  /*background: url(http://www.coastal.com/thelook/wp-uploads/2013/07/black-rim-glasses-main1.jpg);*/
+  background: url("http://static1.squarespace.com/static/552762cde4b0a6b1a31cbba5/556e7e79e4b0677012bc0752/556e7e7ee4b0677012bc075a/1433304729233/IMG_5419.JPG?format=1000w");
   background-repeat: bottom;
   background-size: cover;
 }
