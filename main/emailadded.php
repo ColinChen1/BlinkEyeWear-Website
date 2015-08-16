@@ -22,7 +22,7 @@ if(isset($_POST['submit_email']))
 	if(empty($data_missing))
 	{
 		require_once('../mySQL_connect.php'); 
-		$query = 'INSERT INTO emails (email) VALUES (?)';
+		$query = 'INSERT INTO user_referral_data (email) VALUES (?)';
 		$statement = mysqli_prepare($dbc, $query); 
 
 		mysqli_stmt_bind_param($statement, "s", $email); 
