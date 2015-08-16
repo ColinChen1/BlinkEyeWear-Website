@@ -22,10 +22,15 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 	if(empty($data_missing)) //If no data missing...
 	{
 		require_once('../mySQL_connect.php'); //Connecting to database
-		$query = 'INSERT INTO user_referral_data (email) VALUES (?)'; //Inserting email into database. 
+		$query = 'INSERT INTO user_data (email, referral_code) VALUES (?, ?)'; //Query for inserting email into database. 
 		$statement = mysqli_prepare($dbc, $query); #Making statement. 
 
-		mysqli_stmt_bind_param($statement, "s", $email); 
+		$seed = str_split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'); #Creating random referral code. 
+		$rand = '';
+		foreach (array_rand($seed, 6) as $k) $rand .= $seed[$k];
+		echo $rand; 
+
+		mysqli_stmt_bind_param($statement, "ss", $email, $rand); 
 		mysqli_stmt_execute($statement); #Inserting email. 
 
 		$affected_rows = mysqli_stmt_affected_rows($statement); 
