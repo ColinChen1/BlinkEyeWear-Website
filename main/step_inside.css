@@ -104,22 +104,22 @@ div #Be_the_first{
 } 
 
 .facebook{
-  background: url('facebook2.png');
+  background: url('assets/icons/facebook2.png');
   background-size: 100%;
 }
 
 .email{
-  background: url('email1.png');
+  background: url('assets/icons/email1.png');
   background-size: 100%;
 }
 
 .instagram{
-    background: url('insta3.png');
+    background: url('assets/icons/insta3.png');
   background-size: 100%;
 }
 
 .twitter{
-  background: url('twitter.png');
+  background: url('assets/icons/twitter.png');
   background-size: 100%;
 }
 div .social{
