@@ -4,14 +4,10 @@
 require_once('../mySQL_connect.php');
 
 $query = "SELECT email FROM user_referral_data"; 
-
 $response = @mysqli_query($dbc, $query); 
 
-
-
-if($response)
+if($response) //DISPLAYING DATA
 {
-
 	echo ' <table align = "left" cellspacing = "5" cellpadding = "8">
 
 	   <tr><td align = "left"><b>Email</b></td>

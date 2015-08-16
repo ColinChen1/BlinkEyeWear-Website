@@ -1,5 +1,5 @@
 <?php
-
+//CONNECTING TO DATABASE
 DEFINE('DB_USER', 'root'); 
 DEFINE('DB_PASSWORD', 'turtledove');
 DEFINE('DB_HOST', 'localhost');
