@@ -39,8 +39,8 @@
       <div class = "row"> 
         <div class="col-xs-4" ></div>
         <div class="col-xs-4" id = "input">
-          <form onsubmit = "checkEmail('usr');">
-          <!-- <form action = "http://localhost/blinkeyewear-website/main/emailadded.php" method = "post"> -->
+          <!-- <form > -->
+          <form  id = "actionForm" onsubmit = "checkEmail('usr');" action = "http://localhost/blinkeyewear-website/main/emailadded.php" method = "post">
             
             <div class="form-group" >
               <input type="text"  name = "email_input" class="email_input focus" id="usr" placeholder = "enter email" value = "">
@@ -62,11 +62,11 @@
           if(!validateEmail(email))
           {
             alert("The email you entered is not correct");
+            document.getElementById("actionForm").removeAttribute("action"); 
           }
           else
           {
-            window.location = "http://localhost/blinkeyewear-website/main/emailadded.php";
-
+      
           }
         }
         function validateEmail(email) {
