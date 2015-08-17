@@ -143,4 +143,26 @@ input[type="text"]:focus {
 }
 #meter{
 	height: 700px;
+	background-color: ##EEEEF0;
+}
+
+#progress_marker{
+	margin-top: 50px;
+	height: 150px;
+	text-align: center;
+}
+.progress{
+	  margin: 0 auto;
+  	text-align: left;
+	width: 60%;
+}
+
+.progress-bar{
+	background-color: #66D1D1;
+}
+
+#progress_header{
+	margin-top: 50px;
+	font-size: 30px;
+	color:#66D1D1;
 }
