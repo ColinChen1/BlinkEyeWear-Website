@@ -16,16 +16,22 @@
     }
 }
 #company{
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 	font-size: 35px;
 	color: white;
 }
 
 #thanks{
-	font-size: 20px;
-	color:white;
+	font-size: 60px;
+	color: darkgray;
+
+
 }
 
+#thank_you{
+	text-align: center;
+	height: 100px;
+}
 .middle{
 	height: 700px;
 	background-color: #33C1C1;
