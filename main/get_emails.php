@@ -3,7 +3,7 @@
 
 require_once('../mySQL_connect.php');
 
-$query = "SELECT email, referral_code FROM user_data"; 
+$query = "SELECT email, referral_code, friends_referred FROM user_data"; 
 $response = @mysqli_query($dbc, $query); 
 
 if($response) //DISPLAYING DATA
@@ -17,7 +17,8 @@ if($response) //DISPLAYING DATA
 	while($row = mysqli_fetch_array($response))
 	{
 		echo '<tr><td align="left">' . $row['email'] .
-			 '</td><td align="left">' . $row['referral_code'];
+			 '</td><td align="left">' . $row['referral_code'] . 
+			 '</td><td aligh ="left">' . $row['friends_referred'];
 	}
 }
 else

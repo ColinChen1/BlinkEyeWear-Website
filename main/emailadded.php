@@ -68,6 +68,8 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 	
 }
 
+header('Location: referral_page.html'); 
+
 ?>
 
 </body>
