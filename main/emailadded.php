@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Email Added</title>
+	<title></title>
 </head>
 <body>
 <?php
@@ -21,6 +21,19 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 
 	if(empty($data_missing)) //If no data missing...
 	{
+		$to      = 'colinchen1526@gmail.com';
+		$subject = 'the subject';
+		$message = 'hello';
+		$send = mail('colinchen1526@gmail.com', $subject, $message); //Sending email telling user that they have signed up. 
+		if($send)
+		{
+			echo 'Yes'; 
+		}
+		else
+		{
+			echo 'No';
+		}
+
 		require_once('../mySQL_connect.php'); //Connecting to database
 		$query = 'INSERT INTO user_data (email, referral_code) VALUES (?, ?)'; //Query for inserting email into database. 
 		$statement = mysqli_prepare($dbc, $query); #Making statement. 
@@ -31,7 +44,7 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 		echo $rand; 
 
 		mysqli_stmt_bind_param($statement, "ss", $email, $rand); 
-		mysqli_stmt_execute($statement); #Inserting email. 
+		mysqli_stmt_execute($statement); #Inserting email and randomly generated referral code. 
 
 		$affected_rows = mysqli_stmt_affected_rows($statement); 
 		if($affected_rows == 1) #Making sure only one roow is changed. 
@@ -39,7 +52,6 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 			echo 'Email Entered'; 
 			mysqli_stmt_close($statement); 
 			mysqli_close($dbc); 
-
 		}
 		else
 		{
