@@ -24,7 +24,7 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 
 		require_once('../mySQL_connect.php'); //Connecting to database.
 
-		$same = mysql_query("SELECT * FROM user_data WHERE email = 'colinchen1526@gmail.com'") or die("query error1"); 
+		$same = mysql_query("SELECT * FROM user_data WHERE email = '$email'") or die("query error1"); 
 
 		if(mysql_num_rows($same) == 0)
 		{
@@ -67,6 +67,8 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 				mysqli_stmt_close($statement); 
 				mysqli_close($dbc); 
 			}
+
+			header('Location: referral_page.html/?ref=sqit');
 		}
 		else
 		{
