@@ -68,7 +68,7 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 				mysqli_close($dbc); 
 			}
 
-			header('Location: referral_page.html/?ref=sqit');
+			header(('Location: referral_page.php?ref=' . $rand));
 		}
 		else
 		{
