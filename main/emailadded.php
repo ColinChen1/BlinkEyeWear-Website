@@ -10,6 +10,8 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 {
 	$data_missing = array(); //Checking for missing data in form. 
 
+	require_once('../mySQL_connect.php'); //Connecting to database.
+
 	if(empty($_POST['email_input'])) 
 	{
 		$data_missing[] = 'email'; 
@@ -22,11 +24,9 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 	if(empty($data_missing)) //If no data missing...
 	{
 
-		require_once('../mySQL_connect.php'); //Connecting to database.
+		$checkForSameEmail = mysql_query("SELECT * FROM user_data WHERE email = '$email'") or die("query error1"); 
 
-		$same = mysql_query("SELECT * FROM user_data WHERE email = '$email'") or die("query error1"); 
-
-		if(mysql_num_rows($same) == 0)
+		if(mysql_num_rows($checkForSameEmail) == 0)
 		{
 
 		//	$to      = 'colinchen1526@gmail.com';
@@ -72,6 +72,9 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 		}
 		else
 		{
+			$grabReferralCodeQuery = 'SELECT referral_code FROM user_data WHERE email = "$email"'; 
+			mysql_query($grabReferralCodeQuery); 
+			header(('Location: referral_page.php?ref=' . $grabReferralCodeQuery)); 
 			echo 'Email already in database!'; 
 		}
 	}
