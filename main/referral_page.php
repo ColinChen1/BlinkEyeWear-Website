@@ -52,20 +52,21 @@
           </div>
         </div>
         
-        <div class = "row">
-          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header">  </p> </div>
+        <div class = "row" id = "progress_header_total">
+          
           <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header"> start </p> </div>
-          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header"> reward 1</p></div>
-          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header"> reward 2 </p> </div>
-          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header"> reward 3 </p> </div>
+          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header" onclick = "changeProgress(25)"> reward 1</p></div>
+          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header" onclick = "changeProgress(50)"> reward 2 </p></div>
+          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header" onclick = "changeProgress(75)"> reward 3 </p></div>
+          <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header" onclick = "changeProgress(100)"> reward 4 </p></div>
           <div class = "col-xs-2" id = "progress_marker"> <p id = "progress_header">  </p> </div>
 
         </div>
 
-        <div class="progress" >
-          <div class="progress-bar progress-bar-striped active" id = "progressBar" role="progressbar"
+        <div class="progress"   >
+          <div class="progress-bar progress-bar-striped active" id = "progressbar" role="progressbar"
           aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-          <p id = "progress-percent">  </p>
+          <p id = "progress-percent"> 0% </p>
         </div>
       </div>
 
@@ -73,6 +74,16 @@
       </div>
 
     </div>
+    <script type="text/javascript">
+      function changeProgress(percent) {
+        document.getElementById("progress-percent").innerHTML = percent.toString() + "%";
+        document.getElementById("progressbar").style.width = percent.toString() + "%";
+        document.getElementById("progressbar").attr("aria-valuenow", percent.toString());
+        
+      }
+      
+
+    </script>
 
   </body>
 

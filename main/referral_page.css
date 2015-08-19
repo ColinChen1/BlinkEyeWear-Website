@@ -150,16 +150,18 @@ input[type="text"]:focus {
 .progress{
 	  margin: 0 auto;
   	text-align: left;
-	width: 60%;
+	width: 70%;
 }
 
 .progress-bar{
 	background-color: #66D1D1;
-	width: 50%;
+	/*width: 50%;*/
 }
 
 #progress_header{
 	margin-top: 50px;
+
 	font-size: 30px;
 	color:#66D1D1;
 }
+
