@@ -72,10 +72,11 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 		}
 		else
 		{
-			$grabReferralCodeQuery = 'SELECT referral_code FROM user_data WHERE email = "$email"'; 
-			mysql_query($grabReferralCodeQuery); 
-			header(('Location: referral_page.php?ref=' . $grabReferralCodeQuery)); 
-			echo 'Email already in database!'; 
+			$grabReferralCodeQuery = "SELECT referral_code FROM user_data WHERE email = '$email'"; 
+			$referral_code_object = mysql_query($grabReferralCodeQuery); 
+			$referral_code_array = mysql_fetch_assoc($referral_code_object);
+			$referral_code_url = $referral_code_array['referral_code']; 
+			header(('Location: referral_page.php?ref=' . $referral_code_url)); 
 		}
 	}
 	else //If data is missing. 
