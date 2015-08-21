@@ -72,7 +72,7 @@ if(isset($_POST['submit_email'])) //Grabbing email from input box.
 		}
 		else
 		{
-			$grabReferralCodeQuery = "SELECT referral_code FROM user_data WHERE email = '$email'"; 
+			$grabReferralCodeQuery = "SELECT referral_code FROM user_data WHERE email = '$email'"; //Getting referral code of already entered email. 
 			$referral_code_object = mysql_query($grabReferralCodeQuery); 
 			$referral_code_array = mysql_fetch_assoc($referral_code_object);
 			$referral_code_url = $referral_code_array['referral_code']; 
