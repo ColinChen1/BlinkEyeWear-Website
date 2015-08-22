@@ -1,4 +1,6 @@
 <?php
-$test = 'hi'; 
-echo 'hi' . $test; 
+if(empty($_GET["name"]))
+{
+	echo 'empty'; 
+}
 ?>

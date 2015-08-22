@@ -6,10 +6,10 @@
    <link href="font-awesome.min.css" rel="stylesheet">
    <link href="bootstrap-social.css" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="referral_page.css">
+  <link rel="stylesheet" href="referral_page.css">
     
   </head>
 
@@ -75,15 +75,25 @@
 
     </div>
     <script type="text/javascript">
-      function changeProgress(percent) {
+      function changeProgress(percent) 
+      {
         document.getElementById("progress-percent").innerHTML = percent.toString() + "%";
         document.getElementById("progressbar").style.width = percent.toString() + "%";
         document.getElementById("progressbar").attr("aria-valuenow", percent.toString());
-        
       }
-      
-
     </script>
+
+    <?php
+
+    if(!empty($_GET["ref"]))
+    {
+      $referral_code = $_GET["ref"]; 
+    }
+    else
+    {
+      header('Location: noReferralCode.php'); 
+    }
+    ?>
 
   </body>
 
