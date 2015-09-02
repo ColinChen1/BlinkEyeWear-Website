@@ -1,0 +1,93 @@
+.navbar{
+	margin-top: 
+}
+.navbar a {
+    color: white;
+}
+.navbar > li > a:hover{
+	background-color: none;
+}
+#nav-right{
+	font-size: 16px;
+	margin-top: 40px;
+	margin-right: 200px;
+}
+.navbar-header{
+
+	margin-top: 40px;
+	margin-left: 200px;
+}
+
+.top{
+	height: 800px;
+	background: url('https://d10m5q1qi77nrf.cloudfront.net/dist/img/company/fullteam2.jpg');
+	background-size: cover;
+}
+
+.navbar-nav > li > a:hover{
+	
+	background-color: transparent;
+	color: lightgray;
+}
+.navbar-nav > li > a .active{
+	background-color: transparent;
+}
+#quote{
+	font-size: 35px;
+	color:white;
+}
+#quote-div{
+	margin-top: 250px;
+
+}
+
+.team{
+	margin-top: 10px;
+	
+	height: 900px;
+	width: 1000px;
+	background-color: transparent;
+}
+
+#team-header{
+	margin-top: 40px;
+	text-align: left;
+	width: 1000px;
+	font-size: 40px;
+	color: gray;
+}
+
+#line{
+
+	width: 1000px;
+	height: 1px;
+	background-color: gray;
+}
+
+#stay-in-place {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+}
+.move-in-to-place {
+    position: absolute;
+    bottom: +100%;
+    height : 100%;
+    width : 100%;
+    background-color: blue;
+    /*height:0;*/
+}
+.box {
+    position: relative;
+    width:1000px;
+    height:200px;
+    overflow:hidden;
+}
+
+.pic{
+	width: 195px;
+	height: 200px;
+	background-color: gray;
+	display: inline-block;
+}
