@@ -6,8 +6,9 @@ $(document).ready(function(){
     });
 
     $('#member1-info').click(function(){
-    	$('#member1-info').animate({ "bottom": "-=10px" }, "fast" );
-    	$('#member1-info').animate({ "bottom": "+=210px" }, "fast" );
+    	$('#member1-info').animate({ "bottom": "+=10px" }, "fast" );
+    	$('#member1-info').animate({ "bottom": "-=210px" }, "fast" );
+        $('#member1-info').animate({ "bottom": "+=400px" }, 0 );
     });
 
     $('#member2').click(function(){
@@ -17,8 +18,9 @@ $(document).ready(function(){
     });
 
     $('#member2-info').click(function(){
-    	$('#member2-info').animate({ "bottom": "-=10px" }, "fast" );
-    	$('#member2-info').animate({ "bottom": "+=210px" }, "fast" );
+        $('#member2-info').animate({ "bottom": "+=10px" }, "fast" );
+        $('#member2-info').animate({ "bottom": "-=210px" }, "fast" );
+        $('#member2-info').animate({ "bottom": "+=400px" }, 0 );
     });
 
      $('#member3').click(function(){
@@ -28,8 +30,9 @@ $(document).ready(function(){
     });
 
     $('#member3-info').click(function(){
-    	$('#member3-info').animate({ "bottom": "-=10px" }, "fast" );
-    	$('#member3-info').animate({ "bottom": "+=210px" }, "fast" );
+        $('#member3-info').animate({ "bottom": "+=10px" }, "fast" );
+        $('#member3-info').animate({ "bottom": "-=210px" }, "fast" );
+        $('#member3-info').animate({ "bottom": "+=400px" }, 0 );
     });
 
      $('#member4').click(function(){
@@ -39,8 +42,9 @@ $(document).ready(function(){
     });
 
     $('#member4-info').click(function(){
-    	$('#member4-info').animate({ "bottom": "-=10px" }, "fast" );
-    	$('#member4-info').animate({ "bottom": "+=210px" }, "fast" );
+        $('#member4-info').animate({ "bottom": "+=10px" }, "fast" );
+        $('#member4-info').animate({ "bottom": "-=210px" }, "fast" );
+        $('#member4-info').animate({ "bottom": "+=400px" }, 0 );
     });
 
      $('#member5').click(function(){
@@ -50,8 +54,9 @@ $(document).ready(function(){
     });
 
     $('#member5-info').click(function(){
-    	$('#member5-info').animate({ "bottom": "-=10px" }, "fast" );
-    	$('#member5-info').animate({ "bottom": "+=210px" }, "fast" );
+        $('#member5-info').animate({ "bottom": "+=10px" }, "fast" );
+        $('#member5-info').animate({ "bottom": "-=210px" }, "fast" );
+        $('#member5-info').animate({ "bottom": "+=400px" }, 0 );
     });
 
 });
