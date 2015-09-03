@@ -100,8 +100,8 @@
 
     if(!empty($_GET["ref"]))
     {
-      $referral_code = $_GET["ref"]; 
-    }
+      $referral_code = $_GET["ref"];
+     }
     else
     {
       header('Location: noReferralCode.php'); 
